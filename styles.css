@@ -1,0 +1,245 @@
+/*Social Media*/
+.respond {
+  max-width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+/*Contact Page*/
+.contact-box{
+display: flex;
+}
+
+.contact-left {
+ flex-basis: 60%;
+ padding: 40px 60px;
+}
+
+.contact-right {
+ flex-basis: 40%;
+ padding: 40px;
+ color: #fff;
+}
+
+.input-row{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+}
+
+.input-row .input-group {
+flex-basis: 45%; 
+}
+
+input {
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid #ccc;
+ outline: none;
+ padding-bottom: 5px;
+}
+
+textarea{
+ width: 100%;
+ border: 1px solid #ccc;
+ outline: none;
+ padding: 10px;
+ padding-bottom: 100px;
+ box-sizing: border-box;
+}
+
+label{
+ margin-bottom: 6px;
+ display: block;
+ color: #558ABB;
+}
+
+/*Zoom on Images on Portfolio*/
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  align-self: center;
+}
+
+/* Navigation Bar */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.h2 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#images{
+    text-align:center;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: 80vh;
+}
+
+.image123 {
+ display: table; 
+ margin: 0 auto; 
+}
+
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'New Century Schoolbook', sans-serif;
+  color: #f2f2f2;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  color: transparent;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: transparent;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+ @media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/*round corners on images*/
+img.rounded-corners {
+  border-radius: 30px;
+}
+
+/*Heading bar*/
+#blackBarTop{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:90px;
+background-color:black;
+}
+
+/*Footer Bar*/
+#blackBarBottom{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:90px;
+background-color:black;
+text-align: center;
+}
+
+/*Gallery*/
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+

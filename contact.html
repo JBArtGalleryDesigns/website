@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ 
+    <!--Connect Javascript and CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="Java.js"></script>
+    
+    <!--Title-->
+    <title>JB Art Gallery Designs</title>
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    
+    <!--Navigation Bar-->
+    <script>
+        function openNav()
+        {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav()
+        {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }
+</script>
+</head>
+
+<body>
+    
+<!--Black Bar with Navigation-->    
+ <div id="blackBarTop">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html"><b>JIBREEL ART</b></a>
+  <a href="about.html">ABOUT</a>
+  <a href="portfolio.html">PORTFOLIO</a>
+  <a class="active" href="contact.html">CONTACT</a>
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav();">&#9776;</button>
+</div>
+</div>
+ <!--Background-->
+<style>
+ body {
+ background-image: url("images/background.png");
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ height: auto;
+ overflow-x: hidden;
+ overflow-y: auto;
+}
+</style>
+
+ <!--Heading-->
+<center>
+ <b>
+<h1 style="padding-top: 100px; font-family: 'New Century Schoolbook', sans-serif; font-variant: small-caps; font-size: 3vw; text-shadow: 3px 3px #558ABB;">Contact For More</h1>
+</b>
+</center>
+
+<!--Contact form-->
+ <div class="contact-box" style="padding-bottom: 200px">
+  <!--Left side of the contact form-->
+        <div class="contact-left">
+         <h3 style="font-size: 2vw; font-family: sans-serif;">Send your request</h3>
+         <form action="mail.php" method="post">
+      <!--Row Number 1-->
+          <div class="input-row">
+           <!--First Name label-->
+           <div class="input-group">
+            <label style="font-size: 2vw; font-family: sans-serif;">First Name</label>
+            <input type="text" name="fname" placeholder="John">      
+           </div>
+            <!--Last Name label-->
+           <div class="input-group">
+            <label style="font-size: 2vw; font-family: sans-serif;">Last Name</label>
+            <input type="text" name="lname" placeholder="Doe">      
+           </div>
+          </div>
+      <!--Row Number 2-->
+          <div class="input-row">
+           <!--Email-->
+           <div class="input-group">
+            <label style="font-size: 2vw; font-family: sans-serif;">Email</label>
+            <input type="email" name="email" placeholder="JohnDoe1234@JohnDoe.com">      
+           </div>
+           <!--Subject-->
+           <div class="input-group">
+            <label style="font-size: 2vw; font-family: sans-serif;">Subject</label>
+            <input type="text" name="subject" placeholder="Purchase">      
+           </div>
+          </div>
+          
+          <!--Message area-->
+          <label style="font-size: 2vw; font-family: sans-serif;">Message</label>
+        <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+        
+        <!--Button to submit-->
+        <button type="submit" style="border: 1px solid #ccc; box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);">Submit</button>
+        <button type="reset" style="border: 1px solid #ccc; box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);">Clear</button>
+          </form>
+        </div>
+        
+        
+        
+  <!--Right side of the contact form-->
+        <div class="content-right">
+         
+         <table>
+          <tr>
+             <td style="font-size: 2vw; font-family: sans-serif; color: #558ABB;">JibreelBiz@gmail.com</td>
+           </tr>
+           <tr>
+             <td>
+              <img class="rounded-corners" src="images/contactpic.jpg">
+             </td>
+           </tr>
+         </table>
+        </div>
+ <!--End of contact box-->
+ </div>
+ 
+</body>
+
+<footer>
+    <!--Bottom Black Bar-->
+    <div id="blackBarBottom">
+        <div>
+      <img src="images/thunderbirdwhite.png" alt="Logo" style="padding-top: 10px">
+     </div>
+    </div>
+</footer>
+
+</html>
